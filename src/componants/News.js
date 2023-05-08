@@ -59,9 +59,7 @@ const News = (props) => {
         <div className="text-center text-capitalize">
           <h1>{props.catagry}- top Headlines</h1>
         </div>
-
         {spin && <Spin />}
-
         <span>{article}</span>
       </div>
       <div className="mx-lg-5 " style={{ marginBottom: "90px" }}>
