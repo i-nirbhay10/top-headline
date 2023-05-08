@@ -10,8 +10,6 @@
 
 # production
 /build
-
-#key
 /.env
 
 # misc
