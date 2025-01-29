@@ -10,7 +10,7 @@ const Nav = (props) => {
 
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg bg-secondary">
+      <nav className="navbar fixed-top navbar-expand-lg   bg-dark">
         <div className="container-fluid">
           <div className=""></div>
           <Link

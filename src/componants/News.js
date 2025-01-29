@@ -23,6 +23,7 @@ const News = (props) => {
 
   const fetchApi = async () => {
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.catagry}&apiKey=${process.env.REACT_APP_KEY}&page=${page}&pagesize=12`;
+    console.log(url);
     setspin(true);
     const response = await fetch(url);
     const res = await response.json();
@@ -48,9 +49,10 @@ const News = (props) => {
     );
     setspin(false);
   };
+
   useEffect(() => {
     fetchApi();
-  }, [setartical]);
+  }, [page]);
 
   return (
     <>
@@ -81,8 +83,8 @@ const News = (props) => {
           next
         </button>
       </div>
-      <div className=" fixed-bottom text-center text-light bg-secondary p-1 ">
-        <h4>All Right Reserved To &#169; Khabar.com</h4>
+      <div className=" fixed-bottom text-center text-light bg-dark p-2 ">
+        <h5>All Right Reserved To &#169; Khabar.com</h5>
       </div>
     </>
   );

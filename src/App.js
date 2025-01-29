@@ -8,12 +8,12 @@ function App() {
         <Route
           exact
           path="/"
-          element={<News key="general" country={"in"} catagry={"general"} />}
+          element={<News key="general" country={"us"} catagry={"general"} />}
         />
         <Route
           exact
           path="business"
-          element={<News key="business" country={"in"} catagry={"business"} />}
+          element={<News key="business" country={"us"} catagry={"business"} />}
         />
         <Route
           exact
@@ -21,7 +21,7 @@ function App() {
           element={
             <News
               key="entertainment"
-              country={"in"}
+              country={"us"}
               catagry={"entertainment"}
             />
           }
@@ -29,24 +29,24 @@ function App() {
         <Route
           exact
           path="health"
-          element={<News key="health" country={"in"} catagry={"health"} />}
+          element={<News key="health" country={"us"} catagry={"health"} />}
         />
         <Route
           exact
           path="science"
-          element={<News key="science" country={"in"} catagry={"science"} />}
+          element={<News key="science" country={"us"} catagry={"science"} />}
         />
         <Route
           exact
           path="technology"
           element={
-            <News key="technology" country={"in"} catagry={"technology"} />
+            <News key="technology" country={"us"} catagry={"technology"} />
           }
         />
         <Route
           exact
           path="sports"
-          element={<News key="sports" country={"in"} catagry={"sports"} />}
+          element={<News key="sports" country={"us"} catagry={"sports"} />}
         />
         <Route
           path="*"
