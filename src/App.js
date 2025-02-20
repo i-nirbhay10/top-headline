@@ -12,6 +12,11 @@ function App() {
         />
         <Route
           exact
+          path="top-headline"
+          element={<News key="general" country={"us"} catagry={"general"} />}
+        />
+        <Route
+          exact
           path="business"
           element={<News key="business" country={"us"} catagry={"business"} />}
         />
